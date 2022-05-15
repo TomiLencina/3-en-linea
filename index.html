@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\styles.css">
+    <link rel="stylesheet" href="styles\tablet.css" media="screen and (min-width: 600px)">   
+    <title>3 en linea</title>
+</head>
+<body>
+    <header class="header">
+        <figure class="header_fig">
+                <img class="header_fig-icon" src="./imagenes/game.png">
+        </figure>
+        <h1 class="header__h1">Juego 3 en linea</h1>
+    </header>
+    <section class="section">
+        <aside class="section__aside">
+            <h2 class=""section__aside-h2 id="player1_title">Jugador 1</h2>
+            <picture class="section__aside-picture">
+                    <img src="./imagenes/init.png" alt="Inicial" id="img_player1">
+            </picture>
+            <div class="section__div">
+                    <p class="section__div-p">Puntuacion:</p>
+                    <p class="section__div-number-score" id="score1">0</p>
+                </div>
+        </aside>
+
+        <main class="section__main">
+                <table class="section__main-table">
+                    <tr>
+                        <td id="c1_1">
+                            <button class="button_sel button_select" onclick="active_cc11()" type="button" id="buttom_active1"></button>
+                        </td>
+                        <td id="c1_2">
+                            <button class="button_sel button_select" onclick="active_cc12()" type="button" id="buttom_active2"></button>
+                        </td>
+                        <td id="c1_3">
+                            <button class="button_sel button_select" onclick="active_cc13()" type="button" id="buttom_active3"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="c2_1">
+                            <button class="button_sel button_select" onclick="active_cc21()" type="button" id="buttom_active4"></button>
+                        </td>
+                        <td id="c2_2">
+                            <button class="button_sel button_select" onclick="active_cc22()" type="button" id="buttom_active5"></button>
+                        </td>
+                        <td id="c2_3">
+                            <button class="button_sel button_select" onclick="active_cc23()" type="button" id="buttom_active6"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="c3_1">
+                            <button class="button_sel button_select" onclick="active_cc31()" type="button" id="buttom_active7"></button>
+                        </td>
+                        <td id="c3_2">
+                            <button class="button_sel button_select" onclick="active_cc32()" type="button" id="buttom_active8"></button>
+                        </td>
+                        <td id="c3_3">
+                            <button class="button_sel button_select" onclick="active_cc33()" type="button" id="buttom_active9"></button>
+                        </td>
+                    </tr>
+                </table>
+        
+                <aside class="section__aside">
+                    <h2 class=""section__aside-h2 id="player2_title">Jugador 2</h2>
+                    <picture class="section__aside-picture">
+                            <img src="./imagenes/init.png" alt="Inicial" id="img_player2">
+                    </picture>
+                    <div class="section__div">
+                            <p class="section__div-p">Puntuacion:</p>
+                            <p class="section__div-number-score" id="score2">0</p>
+                        </div>
+                </aside>
+        </main>
+
+        <div class="section__div-mobile">
+            <div class="player-mobile">
+                <p class="player-mobile-p">Jugador 1</p>
+                <p id="score_1m">0</p>
+            </div>
+            <div class="player-mobile">
+                <p class="player-mobile-p">Jugador 2</p>
+                <p id="score_2m">0</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- MODAL VENTANA DE ANICAMACION-->
+<div class="modal-container">
+    <div class="modal modal-close">
+        <img src="./imagenes/win.png" alt="">
+        <div class="modal-text">
+            <h1 id="playerInit"></h1>
+        </div>
+        <button class="button_start start-button"
+        type="button" id="start">
+            Comenzar
+        </button>
+    </div>
+</div>
+    <!-- FIN DEL MODAL-->
+    <footer class="footer">
+        <button type="button" class="button_start" id="ranGame">
+            Sortear Partida
+        </button>
+        <button type="button" onclick="NextGame()" class="button_start" id="nextButton" disabled>
+            Siguiente Juego
+        </button>
+        <button type="button" onclick="resetButtom()" class="button_start" id="cleanButton" disabled>
+            Reiniciar
+        </button>
+    </footer>
+</body>
+</html>
