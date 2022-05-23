@@ -149,6 +149,10 @@ body{
     margin-left: 20px;
 }
 
+#ranGame, #start{
+    cursor: pointer;
+}
+
 #nextbotton, #cleanButton{
     background-color: gray;
     cursor: default;
@@ -187,7 +191,7 @@ body{
     transform: translateY(-200%);
 }
 
-.modal-img{
+.modal img{
     width: 30%;
 
 }

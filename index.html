@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles\styles.css">
-    <link rel="stylesheet" href="styles\tablet.css" media="screen and (min-width: 600px)">   
+    <link rel="stylesheet" href="styles\tablet.css" media="screen and (min-width: 600px)"> 
+    <link rel="stylesheet" href="styles\desktop.css" media="screen and (min-width: 870px)">  
     <title>3 en linea</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <aside class="section__aside">
             <h2 class=""section__aside-h2 id="player1_title">Jugador 1</h2>
             <picture class="section__aside-picture">
-                    <img src="./imagenes/init.png" alt="Inicial" id="img_player1">
+                    <img class="emoji" src="./imagenes/init.png" alt="Inicial" id="img_player1">
             </picture>
             <div class="section__div">
                     <p class="section__div-p">Puntuacion:</p>
@@ -63,19 +64,7 @@
                         </td>
                     </tr>
                 </table>
-        
-                <aside class="section__aside">
-                    <h2 class=""section__aside-h2 id="player2_title">Jugador 2</h2>
-                    <picture class="section__aside-picture">
-                            <img src="./imagenes/init.png" alt="Inicial" id="img_player2">
-                    </picture>
-                    <div class="section__div">
-                            <p class="section__div-p">Puntuacion:</p>
-                            <p class="section__div-number-score" id="score2">0</p>
-                        </div>
-                </aside>
-        </main>
-
+            </main>
         <div class="section__div-mobile">
             <div class="player-mobile">
                 <p class="player-mobile-p">Jugador 1</p>
@@ -86,8 +75,20 @@
                 <p id="score_2m">0</p>
             </div>
         </div>
+        <aside class="section__aside">
+            <h2 class=""section__aside-h2 id="player2_title">Jugador 2</h2>
+            <picture class="section__aside-picture">
+                    <img class="emoji" src="./imagenes/init.png" alt="Inicial" id="img_player2">
+            </picture>
+            <div class="section__div">
+                    <p class="section__div-p">Puntuacion:</p>
+                    <p class="section__div-number-score" id="score2">0</p>
+                </div>
+        </aside>
 
     </section>
+
+
     <!-- MODAL VENTANA DE ANICAMACION-->
 <div class="modal-container">
     <div class="modal modal-close">
@@ -113,5 +114,9 @@
             Reiniciar
         </button>
     </footer>
+
+    <script type="module" src="utils/index.js">
+
+    </script>
 </body>
 </html>
